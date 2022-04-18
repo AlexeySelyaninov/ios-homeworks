@@ -5,4 +5,9 @@
 //  Created by Алексей Селянинов on 15.04.2022.
 //
 
-import Foundation
+import UIKit
+
+struct Post {
+    var title: String
+}
+
