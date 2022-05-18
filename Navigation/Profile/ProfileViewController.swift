@@ -18,9 +18,17 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemGray5
         title = "Profile"
+        profileHeaderView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(profileHeaderView)
+        NSLayoutConstraint.activate([
+            profileHeaderView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            profileHeaderView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            profileHeaderView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            profileHeaderView.heightAnchor.constraint(equalToConstant: 220)
+        
+        ])
     }
-    override func viewWillLayoutSubviews() {
+    /* override func viewWillLayoutSubviews() {
          super.viewWillLayoutSubviews()
         profileHeaderView.frame = CGRect(x: 0,
                                          y: view.safeAreaInsets.top,
@@ -29,4 +37,5 @@ class ProfileViewController: UIViewController {
                                          view.safeAreaInsets.top -
                                          view.safeAreaInsets.bottom)
     }
+     */
 }
