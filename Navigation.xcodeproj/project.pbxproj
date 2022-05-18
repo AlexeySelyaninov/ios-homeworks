@@ -17,6 +17,10 @@
 		11CA683D2802BF5F00E75504 /* MainUITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CA683C2802BF5F00E75504 /* MainUITabBarController.swift */; };
 		11CA68422802BF6100E75504 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11CA68412802BF6100E75504 /* Assets.xcassets */; };
 		11CA68452802BF6100E75504 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11CA68432802BF6100E75504 /* LaunchScreen.storyboard */; };
+		11CA684D2802C09200E75504 /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11CA684C2802C09200E75504 /* ProfileView.xib */; };
+		11CA684F2802C17200E75504 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CA684E2802C17200E75504 /* ProfileView.swift */; };
+		11CA68512802C28900E75504 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11CA68502802C28900E75504 /* Profile.storyboard */; };
+		11CA68532802C2A800E75504 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CA68522802C2A800E75504 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		11CA68412802BF6100E75504 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11CA68442802BF6100E75504 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11CA68462802BF6100E75504 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11CA684C2802C09200E75504 /* ProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileView.xib; sourceTree = "<group>"; };
+		11CA684E2802C17200E75504 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		11CA68502802C28900E75504 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		11CA68522802C2A800E75504 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,10 @@
 		11CA682C2802BF5F00E75504 = {
 			isa = PBXGroup;
 			children = (
+				11CA684C2802C09200E75504 /* ProfileView.xib */,
+				11CA68502802C28900E75504 /* Profile.storyboard */,
+				11CA68522802C2A800E75504 /* ProfileViewController.swift */,
+				11CA684E2802C17200E75504 /* ProfileView.swift */,
 				11CA68372802BF5F00E75504 /* Navigation */,
 				11CA68362802BF5F00E75504 /* Products */,
 			);
@@ -145,7 +157,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11CA684D2802C09200E75504 /* ProfileView.xib in Resources */,
 				11CA68452802BF6100E75504 /* LaunchScreen.storyboard in Resources */,
+				11CA68512802C28900E75504 /* Profile.storyboard in Resources */,
 				11CA68422802BF6100E75504 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,9 +171,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+feature-iosui-20/2
 				117556312809527B00D7B7F9 /* ProfileViewController.swift in Sources */,
 				11CA683D2802BF5F00E75504 /* MainUITabBarController.swift in Sources */,
 				117556332809529800D7B7F9 /* FeedViewController.swift in Sources */,
+				11CA684F2802C17200E75504 /* ProfileView.swift in Sources */,
+				11CA683D2802BF5F00E75504 /* ViewController.swift in Sources */,
+				11CA68532802C2A800E75504 /* ProfileViewController.swift in Sources */, develop-iosui-20
 				11CA68392802BF5F00E75504 /* AppDelegate.swift in Sources */,
 				11755637280952CD00D7B7F9 /* InfoViewController.swift in Sources */,
 				11755639280952F300D7B7F9 /* Post.swift in Sources */,
@@ -309,7 +327,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Navigation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen; feature-iosui-20/2
+
+				INFOPLIST_KEY_UIMainStoryboardFile = Profile develop-iosui-20
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -337,6 +357,8 @@
 				INFOPLIST_FILE = Navigation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+feature-iosui-20/2
+				INFOPLIST_KEY_UIMainStoryboardFile = Profil develop-iosui-20
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
