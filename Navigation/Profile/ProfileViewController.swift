@@ -8,12 +8,13 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
+    
 
     private lazy var profileHeaderView: ProfileHeaderView = {
         let profileHeaderView = ProfileHeaderView()
         return profileHeaderView
     }()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemGray5
@@ -25,17 +26,6 @@ class ProfileViewController: UIViewController {
             profileHeaderView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             profileHeaderView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             profileHeaderView.heightAnchor.constraint(equalToConstant: 220)
-        
         ])
     }
-    /* override func viewWillLayoutSubviews() {
-         super.viewWillLayoutSubviews()
-        profileHeaderView.frame = CGRect(x: 0,
-                                         y: view.safeAreaInsets.top,
-                                         width: view.bounds.width,
-                                         height: view.bounds.height -
-                                         view.safeAreaInsets.top -
-                                         view.safeAreaInsets.bottom)
-    }
-     */
 }
