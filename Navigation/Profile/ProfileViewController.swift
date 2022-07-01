@@ -18,10 +18,6 @@ class ProfileViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(PostTableViewCell.self, forCellReuseIdentifier: PostTableViewCell.indentifier)
-//        tableView.contentInset = UIEdgeInsets(top: -22, left: .zero, bottom: .zero, right: .zero)
-//        tableView.register(ProfileHeaderView.self, forHeaderFooterViewReuseIdentifier: "ProfileHeaderView")
-        
-                           
         return tableView
     }()
     
@@ -33,6 +29,10 @@ class ProfileViewController: UIViewController {
     }
     private func layout() {
         view.addSubview(tableView)
+//        let header = ProfileHeaderView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: tableView.frame.width))
+//        tableView.tableHeaderView = header
+        
+        
         NSLayoutConstraint.activate([
             tableView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
@@ -45,6 +45,14 @@ extension ProfileViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         UITableView.automaticDimension
     }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+            let header = ProfileHeaderView()
+            return header
+        }
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+           246
+       }
 }
 extension ProfileViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
