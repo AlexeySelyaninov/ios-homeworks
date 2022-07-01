@@ -132,8 +132,8 @@ class LogInViewController: UIViewController {
     @objc
     func goToProfile(){
         let profileVC = ProfileViewController()
-        //        navigationController?.pushViewController(profileVC, animated: true)
-        self.present(profileVC, animated: true, completion: nil)
+                navigationController?.pushViewController(profileVC, animated: true)
+//        self.present(profileVC, animated: true, completion: nil)
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

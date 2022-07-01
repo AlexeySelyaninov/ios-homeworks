@@ -13,6 +13,8 @@
 		11755635280952AF00D7B7F9 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11755634280952AF00D7B7F9 /* PostViewController.swift */; };
 		11755637280952CD00D7B7F9 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11755636280952CD00D7B7F9 /* InfoViewController.swift */; };
 		11755639280952F300D7B7F9 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11755638280952F300D7B7F9 /* Post.swift */; };
+		117BDEEE286DF21F005A7350 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117BDEED286DF21F005A7350 /* PostTableViewCell.swift */; };
+		117BDEF2286E363F005A7350 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117BDEF1286E363F005A7350 /* UIView+Extension.swift */; };
 		11CA68392802BF5F00E75504 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CA68382802BF5F00E75504 /* AppDelegate.swift */; };
 		11CA683D2802BF5F00E75504 /* MainUITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CA683C2802BF5F00E75504 /* MainUITabBarController.swift */; };
 		11CA68422802BF6100E75504 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11CA68412802BF6100E75504 /* Assets.xcassets */; };
@@ -27,6 +29,8 @@
 		11755634280952AF00D7B7F9 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		11755636280952CD00D7B7F9 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		11755638280952F300D7B7F9 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		117BDEED286DF21F005A7350 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		117BDEF1286E363F005A7350 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		11CA68352802BF5F00E75504 /* Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11CA68382802BF5F00E75504 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11CA683C2802BF5F00E75504 /* MainUITabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUITabBarController.swift; sourceTree = "<group>"; };
@@ -78,11 +82,13 @@
 			children = (
 				1156BEE0281B022400E865AB /* Profile */,
 				11CA68382802BF5F00E75504 /* AppDelegate.swift */,
+				117BDEED286DF21F005A7350 /* PostTableViewCell.swift */,
 				11755638280952F300D7B7F9 /* Post.swift */,
 				11CA683C2802BF5F00E75504 /* MainUITabBarController.swift */,
 				117556322809529800D7B7F9 /* FeedViewController.swift */,
 				11755634280952AF00D7B7F9 /* PostViewController.swift */,
 				11755636280952CD00D7B7F9 /* InfoViewController.swift */,
+				117BDEF1286E363F005A7350 /* UIView+Extension.swift */,
 				11CA68412802BF6100E75504 /* Assets.xcassets */,
 				11CA68432802BF6100E75504 /* LaunchScreen.storyboard */,
 				11CA68462802BF6100E75504 /* Info.plist */,
@@ -160,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				117BDEF2286E363F005A7350 /* UIView+Extension.swift in Sources */,
 				117556312809527B00D7B7F9 /* ProfileViewController.swift in Sources */,
 				11CA683D2802BF5F00E75504 /* MainUITabBarController.swift in Sources */,
 				11CB13F2285120D3004ABB80 /* LogInViewController.swift in Sources */,
@@ -167,6 +174,7 @@
 				11CA68392802BF5F00E75504 /* AppDelegate.swift in Sources */,
 				11755637280952CD00D7B7F9 /* InfoViewController.swift in Sources */,
 				11755639280952F300D7B7F9 /* Post.swift in Sources */,
+				117BDEEE286DF21F005A7350 /* PostTableViewCell.swift in Sources */,
 				11755635280952AF00D7B7F9 /* PostViewController.swift in Sources */,
 				1156BEE2281B024200E865AB /* ProfileHeaderView.swift in Sources */,
 			);
