@@ -77,8 +77,8 @@ class PostTableViewCell: UITableViewCell {
         postImage.image = post.image
         author.text = post.author
         postDescription.text = post.description
-//        postLikes.text = "Likes: \(post.likes)"
-//        postViews.text = "Views: \(post.views)"
+        postLikes.text = "Likes: \(post.likes)"
+        postViews.text = "Views: \(post.views)"
     }
     
     private func customizeCell() {
@@ -86,7 +86,7 @@ class PostTableViewCell: UITableViewCell {
         
     }
     private func layout() {
-        [contentWhiteView, postImage, author, postDescription].forEach{contentView.addSubview($0)}
+        [contentWhiteView, postImage, author, postDescription, postLikes, postViews].forEach{contentView.addSubview($0)}
         
         NSLayoutConstraint.activate([
             contentWhiteView.topAnchor.constraint(equalTo: contentView.topAnchor),
@@ -104,22 +104,23 @@ class PostTableViewCell: UITableViewCell {
             postImage.leadingAnchor.constraint(equalTo: contentWhiteView.leadingAnchor),
             postImage.widthAnchor.constraint(equalTo: contentWhiteView.widthAnchor),
             postImage.heightAnchor.constraint(equalTo: contentWhiteView.widthAnchor),
-            postImage.bottomAnchor.constraint(equalTo: contentWhiteView.bottomAnchor),
+//            postImage.bottomAnchor.constraint(equalTo: contentWhiteView.bottomAnchor),
         ])
         NSLayoutConstraint.activate([
             postDescription.leadingAnchor.constraint(equalTo: contentWhiteView.leadingAnchor, constant: 16),
             postDescription.topAnchor.constraint(equalTo: postImage.bottomAnchor, constant: 16),
             postDescription.trailingAnchor.constraint(equalTo: contentWhiteView.trailingAnchor, constant: -16),
+//            postDescription.bottomAnchor.constraint(equalTo: contentWhiteView.bottomAnchor),
         ])
-//        NSLayoutConstraint.activate([
-//            postLikes.leadingAnchor.constraint(equalTo: contentWhiteView.leadingAnchor, constant: 16),
-//            postLikes.topAnchor.constraint(equalTo: postDescription.bottomAnchor, constant: 16),
-//            postLikes.bottomAnchor.constraint(equalTo: contentWhiteView.bottomAnchor, constant: -16),
-//        ])
-//        NSLayoutConstraint.activate([
-//            postViews.trailingAnchor.constraint(equalTo: contentWhiteView.trailingAnchor, constant: -16),
-//            postViews.topAnchor.constraint(equalTo: postDescription.bottomAnchor, constant: 16),
-//            postViews.bottomAnchor.constraint(equalTo: contentWhiteView.bottomAnchor, constant: -16)
-//        ])
+        NSLayoutConstraint.activate([
+            postLikes.leadingAnchor.constraint(equalTo: contentWhiteView.leadingAnchor, constant: 16),
+            postLikes.topAnchor.constraint(equalTo: postDescription.bottomAnchor, constant: 16),
+            postLikes.bottomAnchor.constraint(equalTo: contentWhiteView.bottomAnchor, constant: -16),
+        ])
+        NSLayoutConstraint.activate([
+            postViews.trailingAnchor.constraint(equalTo: contentWhiteView.trailingAnchor, constant: -16),
+            postViews.topAnchor.constraint(equalTo: postDescription.bottomAnchor, constant: 16),
+            postViews.bottomAnchor.constraint(equalTo: contentWhiteView.bottomAnchor, constant: -16)
+        ])
     }
 }
